@@ -1,0 +1,112 @@
+@import "tailwindcss";
+
+/* 2015-style classic web constraints */
+*,
+*::before,
+*::after {
+  font-family: Arial, Helvetica, sans-serif !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+  text-shadow: none !important;
+  transition: none !important;
+  animation: none !important;
+}
+
+html {
+  scroll-behavior: auto;
+}
+
+body {
+  background-color: #ffffff;
+  color: #000000;
+  margin: 0;
+  padding: 0;
+  line-height: 1.5;
+}
+
+/* Classic 2015 Orange Rectangular Button */
+.btn-orange {
+  display: inline-block;
+  background-color: #FF8800;
+  color: #000000;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  padding: 8px 16px;
+  border: 1px solid #B35400;
+  cursor: pointer;
+  font-size: 14px;
+  line-height: 1.3;
+}
+
+.btn-orange:hover {
+  background-color: #E66A00;
+  color: #000000;
+}
+
+.btn-orange:active {
+  background-color: #CC5500;
+  color: #FFFFFF;
+}
+
+.btn-orange-lg {
+  display: inline-block;
+  background-color: #FF8800;
+  color: #000000;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  padding: 10px 20px;
+  border: 2px solid #993D00;
+  cursor: pointer;
+  font-size: 16px;
+  line-height: 1.3;
+}
+
+.btn-orange-lg:hover {
+  background-color: #E66A00;
+}
+
+/* Secondary 2015 Button */
+.btn-secondary {
+  display: inline-block;
+  background-color: #FFFFFF;
+  color: #000000;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  padding: 8px 16px;
+  border: 1px solid #000000;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.btn-secondary:hover {
+  background-color: #EEEEEE;
+}
+
+/* Semi-transparent white content box over background photo so Gurudwara building is clearly visible through it */
+.photo-overlay-box {
+  background-color: rgba(255, 255, 255, 0.60);
+  border: 2px solid #000000;
+  padding: 24px;
+}
+
+/* Responsive nav display utilities */
+@media (min-width: 768px) {
+  .mobile-nav-toggle {
+    display: none !important;
+  }
+  .desktop-nav {
+    display: flex !important;
+  }
+}
+
+@media (max-width: 767px) {
+  .mobile-nav-toggle {
+    display: inline-block !important;
+  }
+  .desktop-nav {
+    display: none !important;
+  }
+}

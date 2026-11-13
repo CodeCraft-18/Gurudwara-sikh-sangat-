@@ -1,0 +1,6 @@
+{
+  "name": "Gurdwara Sikh Sangat, Howrah",
+  "description": "Website for ੴ Gurdwara Sikh Sangat, Howrah. Prayer, community seva, affordable accommodation near Howrah Station, and directions.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
